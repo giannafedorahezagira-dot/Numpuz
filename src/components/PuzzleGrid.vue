@@ -15,31 +15,44 @@
 <script setup>
 import { ref, computed } from 'vue'
 
+// Props
 const props = defineProps({
-  size: { type: Number, default: 4 } // 4x4 default
+  size: { type: Number, default: 4 } // default 4x4
 })
 
+// ✅ Define emits
+const emit = defineEmits(['tileMoved'])
+
+// Tiles state
 const tiles = ref(generatePuzzle(props.size))
 
+// Generate puzzle
 function generatePuzzle(size) {
   const arr = Array.from({ length: size * size - 1 }, (_, i) => i + 1)
   arr.push(null) // empty space
   return shuffle(arr)
 }
 
+// Shuffle tiles
 function shuffle(arr) {
   return arr.sort(() => Math.random() - 0.5)
 }
 
+// Move tile
 function moveTile(index) {
   const emptyIndex = tiles.value.indexOf(null)
   const validMoves = getValidMoves(emptyIndex, props.size)
 
   if (validMoves.includes(index)) {
-    [tiles.value[emptyIndex], tiles.value[index]] = [tiles.value[index], tiles.value[emptyIndex]]
+    [tiles.value[emptyIndex], tiles.value[index]] =
+      [tiles.value[index], tiles.value[emptyIndex]]
+
+    // ✅ Emit event to parent
+    emit('tileMoved')
   }
 }
 
+// Valid moves
 function getValidMoves(emptyIndex, size) {
   const moves = []
   const row = Math.floor(emptyIndex / size)
@@ -53,6 +66,7 @@ function getValidMoves(emptyIndex, size) {
   return moves
 }
 
+// Grid style
 const gridStyle = computed(() => ({
   display: 'grid',
   gridTemplateColumns: `repeat(${props.size}, 80px)`,
@@ -68,7 +82,7 @@ const gridStyle = computed(() => ({
   align-items: center;
   justify-content: center;
   background: #000000;
-  color: rgb(250, 250, 250);
+  color: #fafafa;
   font-size: 20px;
   border-radius: 8px;
   cursor: pointer;

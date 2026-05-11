@@ -10,6 +10,7 @@ import { ref } from 'vue'
 // reactive state
 const moves = ref(0)
 
+
 // increment function (called when a tile moves)
 function increment() {
   moves.value++
