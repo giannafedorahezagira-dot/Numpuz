@@ -36,8 +36,7 @@ function moveTile(index) {
   const validMoves = getValidMoves(emptyIndex, props.size)
 
   if (validMoves.includes(index)) {
-    [tiles.value[emptyIndex], tiles.value[index]] =
-      [tiles.value[index], tiles.value[emptyIndex]]
+    [tiles.value[emptyIndex], tiles.value[index]] = [tiles.value[index], tiles.value[emptyIndex]]
   }
 }
 
