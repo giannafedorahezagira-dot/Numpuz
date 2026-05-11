@@ -61,7 +61,7 @@ button {
   padding: 8px 12px;
   border: none;
   border-radius: 6px;
-  background: #4a90e2;
+  background: #000000;
   color: white;
   cursor: pointer;
 }

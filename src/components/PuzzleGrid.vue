@@ -67,8 +67,8 @@ const gridStyle = computed(() => ({
   display: flex;
   align-items: center;
   justify-content: center;
-  background: #4a90e2;
-  color: white;
+  background: #000000;
+  color: rgb(250, 250, 250);
   font-size: 20px;
   border-radius: 8px;
   cursor: pointer;
