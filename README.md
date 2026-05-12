@@ -77,7 +77,7 @@ NumPuz/
 Add your screenshots here:
 
 ```markdown
-![Game Screenshot](assets/screenshot.png)
+![Game Screenshot](assets/image.png)
 ```
 
 ---
