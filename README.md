@@ -1,42 +1,32 @@
-# Numpuz
+1. 🧩 NumPuz
 
-This template should help get you started developing with Vue 3 in Vite.
+NumPuz is a fun sliding puzzle game built with Vue.js where players arrange numbered tiles in the correct order by moving them into the empty space.
 
-## Recommended IDE Setup
+2. 🎮 Game Rules
+- Move tiles next to the empty space
+- Arrange numbers in correct order
+- Complete the puzzle to win
 
-[VS Code](https://code.visualstudio.com/) + [Vue (Official)](https://marketplace.visualstudio.com/items?itemName=Vue.volar) (and disable Vetur).
+3. ✨ Features
+- Smooth tile animations
+- Multiple difficulty levels
+- Responsive modern design
+- Interactive gameplay
 
-## Recommended Browser Setup
+4. 🛠 Technologies Used
+- Vue.js 3
+- JavaScript
+- HTML5
+- CSS
 
-- Chromium-based browsers (Chrome, Edge, Brave, etc.):
-  - [Vue.js devtools](https://chromewebstore.google.com/detail/vuejs-devtools/nhdogjmejiglipccpnnnanhbledajbpd)
-  - [Turn on Custom Object Formatter in Chrome DevTools](http://bit.ly/object-formatters)
-- Firefox:
-  - [Vue.js devtools](https://addons.mozilla.org/en-US/firefox/addon/vue-js-devtools/)
-  - [Turn on Custom Object Formatter in Firefox DevTools](https://fxdx.dev/firefox-devtools-custom-object-formatters/)
+5. 🎯 Purpose
+The purpose of NumPuz is to improve logical thinking, concentration, and problem-solving skills through an enjoyable game experience.
 
-## Type Support for `.vue` Imports in TS
+6. 📱 Levels
+- Easy (3x3)
+- Medium (4x4)
+- Hard (5x5)
+- Expert (6x6)
 
-TypeScript cannot handle type information for `.vue` imports by default, so we replace the `tsc` CLI with `vue-tsc` for type checking. In editors, we need [Volar](https://marketplace.visualstudio.com/items?itemName=Vue.volar) to make the TypeScript language service aware of `.vue` types.
-
-## Customize configuration
-
-See [Vite Configuration Reference](https://vite.dev/config/).
-
-## Project Setup
-
-```sh
-npm install
-```
-
-### Compile and Hot-Reload for Development
-
-```sh
-npm run dev
-```
-
-### Type-Check, Compile and Minify for Production
-
-```sh
-npm run build
-```
+7. 👨‍💻 Developers
+Developed by the NumPuz Team.
